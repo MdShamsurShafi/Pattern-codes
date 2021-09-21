@@ -1,0 +1,31 @@
+num1 = int(input("Enter num: "))
+
+seq = 1
+
+seq_list = []
+
+for count in range(num1):
+    seq_list.append(seq)
+    for index in range(num1-count):
+        print(" ", end = "")
+    for index in range(1, seq+1):
+        print(index, end = "")
+        
+    print()
+    
+    seq += 2
+    
+        
+seq2 = seq_list[-2]
+        
+for count in range(num1-1):
+    for index in range(count+2):
+        print(" ", end = "")
+    for index in range(1, seq2+1):
+        print(index, end = "")
+        
+    print()
+    
+    seq2 -= 2
+
+
